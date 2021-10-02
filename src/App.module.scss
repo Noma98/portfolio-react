@@ -1,0 +1,35 @@
+:root{
+  /* color */
+  --color-main:purple;
+  --color-cream:#f7f9f4;
+  --color-light-gray:RGB(228, 229, 233);
+  --color-dark-gray:rgb(56, 56, 56);
+}
+*{
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+ul{
+  padding: 0;
+}
+li,button{
+  cursor: pointer;
+}
+h1,h2,h3,p{
+  margin: 0;
+}
+h1{
+  font-size: 3rem;
+}
+a{
+  text-align: center;
+}
+article{
+  padding:1em 5em;
+  h1{
+    margin: 0.5em 0;
+    border-bottom: 3px solid whitesmoke;
+  } 
+}
