@@ -1,0 +1,37 @@
+
+@mixin flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+.Header{
+    @include flexAlignCenter();
+    justify-content: space-between;
+    background-color: transparent;
+    color: whitesmoke;
+    transition: background-color ease 400ms;
+    &.colored{
+        background-color:var(--color-dark-gray); 
+    }
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 4rem;
+    padding: 0 2em;
+    z-index: 100;
+    ul{
+        margin-right: 1em;
+        @include flexAlignCenter();
+        li+li{
+            margin-left: 1em;
+        }
+        li{
+            &:hover{
+                color:rgb(184, 73, 184);
+            }
+        }
+    }
+
+}
+.logo{
+    display: flex;
+}
