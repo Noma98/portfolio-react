@@ -1,0 +1,18 @@
+.Skill{
+    display: flex; 
+    align-items: center;
+    width: 95%;
+    p{
+        flex-basis: 30%;
+        text-align: start;
+    }
+    .skillBar{
+        flex-basis: 70%;
+        background-color: var(--color-light-gray);
+        height: 0.6rem;
+        .barValue{
+            height: 0.6rem;
+            background-color: orange;
+        }
+    }
+}
