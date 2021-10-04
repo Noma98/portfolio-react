@@ -1,4 +1,5 @@
 import styles from './App.module.scss';
+import About from './pages/about/About';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import React, { useRef } from 'react'
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
       <Header tabRefs={tabRefs} />
-      <Home />
+      <Home tabRefs={tabRefs} />
+      <About tabRefs={tabRefs} />
     </>
   );
 }
