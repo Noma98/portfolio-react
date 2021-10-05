@@ -1,7 +1,5 @@
 import nomalog1 from '../images/projects/nomalog1.PNG';
 import nomalog2 from '../images/projects/nomalog2.PNG';
-import nomalog3 from '../images/projects/nomalog3.PNG';
-import nomalog4 from '../images/projects/nomalog4.PNG';
 import cardMaker1 from '../images/projects/cardMaker1.PNG';
 import cardMaker2 from '../images/projects/cardMaker2.PNG';
 import youtube2 from '../images/projects/youtube2.PNG';
@@ -26,8 +24,9 @@ const projects = [
             "현재 위치의 날씨 제공"
         ],
         callout: "네이버와 구글 로그인은 검수 허가가 안나서 현재 관리자 계정으로만 로그인이 가능한 상태입니다.",
+        alert: "heroku 무료 버전은 30분간 사용하지 않았을 경우 잠들게 됩니다. 첫 요청시 6초 정도의 로딩 시간이 필요할 수 있습니다.",
         experience: "lodash로 입력 이벤트 debounce, react-tooltip-lite를 이용한 툴팁 제공, 소셜 로그인의 다양한 구현 방법(Rest API/JavaScript SDK/라이브러리) 경험",
-        imgArray: [nomalog2, nomalog1, nomalog3, nomalog4],
+        imgArray: [nomalog1, nomalog2],
         github: "https: //github.com/Noma98/blog-project-front#nomalog-v165",
         front: "React, React Router, PostCSS",
         back: "NodeJS(express), MongoDB(moogoose), AWS S3",
@@ -57,12 +56,12 @@ const projects = [
     },
     {
         name: "Youtube Clone",
-        period: "1차 2020.03.03 - 14, 확장 04.19 - 27",
+        period: "1차 2020.03.03 - 14, 확장 04.19 - 27 ( 1인 프로젝트 )",
         domain: "https://merrytube.netlify.app",
         desc: [
             "드림코딩 아카데미에서 리액트 기초를 배우고 연습하는 과정에서 만든 유튜브를 클론 프로젝트입니다.",
-            "리액트 기초와 다양한 hook들을 사용하는 연습을 할 수 있었고, Youtube API으로 처음으로 데이터 통신을 해봤습니다. ",
-            "클론 코딩인 만큼 UI를 실제 유튜브와 최대한 비슷하게 구현하고자 노력했습니다."
+            "다양한 hook들을 사용하면서 함수형 컴포넌트에 익숙해질 수 있었고, Youtube API를 사용해 데이터 통신을 하면서 처음으로 API와 AJAX 개념에 대해 배울 수 있었습니다. ",
+            "해당 교육 과정에서는 UI 및 기능이 실제 유튜브와는 조금 거리가 있어서, 수강 이후에 혼자 기능 확장 및 UI를 개선하면서 최대한 실제 유튜브와 비슷하게 구현하고자 노력했습니다."
         ],
         features: [
             "유튜브 최신 인기 동영상 제공",
