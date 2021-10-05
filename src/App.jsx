@@ -6,9 +6,13 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 import Skills from './pages/skills/Skills';
 import React, { useRef } from 'react'
+import { FaAngleUp } from 'react-icons/fa';
 
 function App() {
   const tabRefs = useRef([]);
+  const scrollUp = () => {
+    tabRefs.current[0].scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <>
       <Header tabRefs={tabRefs} />
@@ -17,6 +21,9 @@ function App() {
       <Skills tabRefs={tabRefs} />
       <DevLog tabRefs={tabRefs} />
       <Projects tabRefs={tabRefs} />
+      <button className={styles.scrollUp} onClick={scrollUp}>
+        <FaAngleUp size='3rem' />
+      </button>
     </>
   );
 }
