@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './About.module.scss';
-import me from '../../images/about/avatar.svg';
+import me from '../../images/about/avatar.png';
+import og from '../../images/about/og.png';
 
 function About({ tabRefs }) {
     return (
@@ -24,7 +25,7 @@ function About({ tabRefs }) {
                         <div>책임감 강함</div>
                         <div>주변 사람에게도 전달되어지는 열정 🔥 </div>
                         <div>조금 완벽주의적 성향(디테일 중요시)</div>
-                        <div>주체적으로 할 일을 찾는 타입(사서 고생하는..ㅌ)</div>
+                        <div>주체적으로 할 일을 찾는 타입</div>
                     </div>
 
                 </div>
@@ -39,6 +40,7 @@ function About({ tabRefs }) {
                     <h3>Contact Me !</h3>
                     <p>wiostz98kr@gmail.com</p>
                 </div>
+                <img src={og} alt="og" style={{ display: 'none' }} />
             </div>
         </article>
     )

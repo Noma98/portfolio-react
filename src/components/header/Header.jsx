@@ -11,15 +11,6 @@ function Header({ tabRefs }) {
     const [open, setOpen] = useState(false);
     const documentRef = useRef(document);
 
-    useEffect(() => {
-        const mql = window.matchMedia('screen and (max-width:650px)');
-        const handleChange = (event) => {
-            setMQuery(event.matches);
-        };
-        mql.addEventListener('change', handleChange);
-        return () => mql.removeEventListener('change', handleChange);
-    }, []);
-
     const handleScroll = () => {
         setCoord(window.pageYOffset);
     }
@@ -32,8 +23,18 @@ function Header({ tabRefs }) {
     const handleToggle = () => {
         setOpen(!open);
     }
+
     useEffect(() => {
         documentRef.current.addEventListener('scroll', handleScroll);
+    }, []);
+    useEffect(() => {
+        const mql = window.matchMedia('screen and (max-width:650px)');
+        mql.matches && setMQuery(mql.matches);
+        const handleChange = (event) => {
+            setMQuery(event.matches);
+        };
+        mql.addEventListener('change', handleChange);
+        return () => mql.removeEventListener('change', handleChange);
     }, []);
 
     useEffect(() => {

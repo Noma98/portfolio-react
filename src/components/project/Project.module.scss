@@ -40,6 +40,10 @@
                 color:var(--color-sub);
                 font-weight: bold;
             }
+            li{
+                list-style:square;
+                margin-left: 1em;
+            }
         }
     }
 }

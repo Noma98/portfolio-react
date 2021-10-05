@@ -17,6 +17,9 @@ body {
   height: 10%;
   background: var(--color-gray);
 }
+html{
+  background-color: purple;
+}
 @media screen and (max-width:900px) {
   html{
     font-size:18px;
