@@ -1,36 +1,69 @@
 .Skills{
     background-color: var(--color-main);
     h1{
-        color: white;
+        color: orange;
     }
 }
 .container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
     gap: 2em;
     justify-content: center;
     align-items: start;
     .item{
+        flex-basis: 33%;
         background-color:white;
         border-radius: 1rem;
-        padding: 1rem;
+        padding: 2rem;
         img{
-            width: 80%;
-            margin-top: 1em;
+            width: 10rem;
+        }
+        p{
+            margin-top: 0.7em;
         }
     }
+    h2{
+        margin-bottom: 0.7em;
+    }
 }
-.frontBack{
-    grid-column: 1/4;
-    display: flex;
+.first{
+    border-radius: 1rem;
+    margin-bottom: 1em;
+    gap:0;
     background-color: white;
-    padding: 2em;
-    border-radius: 2rem;
-    div{
-        flex-basis: 50%;
-        h3{
-            margin-bottom: 1em;
-        }
+    .item{
+        background-color: transparent;
+    }
+}
+.icon{
+    width: 8rem;
+    height: 8rem;
+    border:3px solid rgb(211, 211, 211);
+    border-radius: 50%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    background-color: var(--color-cream);
+    &:hover{
+        transform: scale(1.01);
     }
 }
 
+@media screen and (max-width:850px) {
+    .container{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .orange{
+        padding: 2em;
+        .item{
+            padding: 0;
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    .Skills{
+        padding: 2em;
+    }
+}

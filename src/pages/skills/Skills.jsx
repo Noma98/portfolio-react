@@ -1,52 +1,53 @@
 import React from 'react'
 import styles from './Skills.module.scss';
 import versionControl from '../../images/skills/versionControl.PNG';
-import backend from '../../images/skills/backend.PNG';
 import etc from '../../images/skills/etc.PNG';
 import deployment from '../../images/skills/deployment.PNG';
-import Skill from '../../components/skill/Skill';
-
-const front = [
-    { name: 'HTML/CSS', percent: '90' },
-    { name: 'JavaScript', percent: '80' },
-    { name: 'React', percent: '80' },
-    { name: 'Redux', percent: '30' },
-    { name: 'Sass/PostCSS', percent: '40' }
-];
-const back = [
-    { name: 'Node JS', percent: '50' },
-    { name: 'MongoDB', percent: '40' }
-];
+import { RiMacbookLine, RiBookOpenLine, RiThumbUpLine } from 'react-icons/ri';
 
 function Skills({ tabRefs }) {
     return (
         <article ref={(el) => (tabRefs.current[2] = el)} className={styles.Skills}>
             <h1>Skills</h1>
+            <div>
+                <div className={`${styles.container} ${styles.first}`}>
+                    <div className={styles.item}>
+                        <h2>Strong</h2>
+                        <div className={styles.icon}>
+                            <RiThumbUpLine size='3rem' />
+                        </div>
+                        <p>HTML5/CSS3, JavaScript, React, NodeJS</p>
 
-            <div className={styles.container}>
-                <div className={styles.frontBack}>
-                    <div>
-                        <h3>Front-end</h3>
-                        {
-                            front.map(skill => <Skill name={skill.name} percent={skill.percent} />)
-                        }
                     </div>
-                    <div>
-                        <h3>Back-end</h3>
-                        {back.map(skill => <Skill name={skill.name} percent={skill.percent} />)}
+                    <div className={styles.item}>
+                        <h2>Experienced</h2>
+                        <div className={styles.icon}>
+                            <RiMacbookLine size='3rem' />
+                        </div>
+                        <p>Firebase, MongoDB, Sass, PostCSS</p>
+
+                    </div>
+                    <div className={styles.item}>
+                        <h2>Studying</h2>
+                        <div className={styles.icon}>
+                            <RiBookOpenLine size='3rem' />
+                        </div>
+                        <p>Redux,  Redux-Saga, Redux-Thunk</p>
                     </div>
                 </div>
-                <div className={styles.item}>
-                    <h3>Version Control</h3>
-                    <img src={versionControl} alt="versionControl" />
-                </div>
-                <div className={styles.item}>
-                    <h3>Deployment</h3>
-                    <img src={deployment} alt="deployment" />
-                </div>
-                <div className={styles.item}>
-                    <h3>Etc</h3>
-                    <img src={etc} alt="etc" />
+                <div className={styles.container}>
+                    <div className={styles.item}>
+                        <h2>Version Control</h2>
+                        <img src={versionControl} alt="versionControl" />
+                    </div>
+                    <div className={styles.item}>
+                        <h2>Deployment</h2>
+                        <img src={deployment} alt="deployment" />
+                    </div>
+                    <div className={styles.item}>
+                        <h2>Etc</h2>
+                        <img src={etc} alt="etc" />
+                    </div>
                 </div>
             </div>
         </article >
