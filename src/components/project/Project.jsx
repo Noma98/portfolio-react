@@ -4,7 +4,7 @@ import styles from './Project.module.scss';
 import { FaCat } from 'react-icons/fa';
 
 function Project({ data }) {
-    const { name, period, domain, desc, features, callout, experience, github, imgArray, front, back, deploy } = data;
+    const { name, period, domain, desc, features, callout, experience, github, imgArray, front, back, deploy, alert } = data;
     return (
         <div className={styles.Project}>
             <h2>{name}</h2>
@@ -12,6 +12,10 @@ function Project({ data }) {
             <div className={styles.container}>
                 <div className={styles.imgs}>
                     <a className={styles.btn} href={domain} target="_blank" rel="noopener noreferrer">{`Go to ${domain.slice(8)}`}</a>
+                    {alert && <div className={styles.alert}>
+                        <FaCat size='40px' color='rgb(243, 106, 243)' />
+                        <p>{alert}</p>
+                    </div>}
                     {imgArray.map((v, i) => <a key={i} href={domain} target="_blank" rel="noopener noreferrer">
                         <img src={v} alt="project" />
                     </a>)}

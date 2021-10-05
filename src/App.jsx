@@ -24,6 +24,10 @@ function App() {
       <button className={styles.scrollUp} onClick={scrollUp}>
         <FaAngleUp size='3rem' />
       </button>
+      <footer>
+        CONTACT | wiostz98kr@gmail.com <br />
+        Copyright ⓒ 2021 Noma All rights reserved.
+      </footer>
     </>
   );
 }

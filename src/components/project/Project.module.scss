@@ -19,12 +19,14 @@
             border-radius: 0.5em;
             margin-bottom: 0.5em;
         }
-        img{width: 100%;}
-        width: 27rem;
+        img{
+            width: 100%;
+        }
+        flex-basis: 45%;
     }
     .desc{
         font-size: 0.9rem;
-        width: 55%;
+        flex-basis: 55%;
         padding-left: 2em;
         text-align:start;
         &>*{
@@ -41,7 +43,8 @@
         }
     }
 }
-.callout{
+.alert,.callout{
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.753);
@@ -56,5 +59,16 @@
     }
     svg{
         margin-right: 1em;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        .desc{
+            padding-left: 0;
+        }
     }
 }

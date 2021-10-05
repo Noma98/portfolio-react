@@ -9,13 +9,13 @@ function DevLog({ tabRefs }) {
             <h1>DevLog</h1>
             <div className={styles.container}>
                 <section>
-                    <h3>Github</h3>
+                    <h2>Github</h2>
                     <img src={github} alt="github" />
                     <a href="https://velog.io/@wiostz98kr" target="_blank" rel="noopener noreferrer">바로가기
                     </a>
                 </section>
                 <section>
-                    <h3>Dev Blog</h3>
+                    <h2>Dev Blog</h2>
                     <img src={velog} alt="velog" />
                     <a href="https://github.com/Noma98" target="_blank" rel="noopener noreferrer">
                         바로가기

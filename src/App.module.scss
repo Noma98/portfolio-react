@@ -1,35 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
 :root{
-  /* color */
+  /* Color */
   --color-main:purple;
+  --color-main-light:rgb(233, 93, 233);
+  --color-sub: rgb(23, 102, 23);
+  --color-underline:rgba(0, 128, 0, 0.431);
+  --color-underline-light:rgba(104, 224, 104, 0.746);
   --color-cream:#f7f9f4;
   --color-light-gray:RGB(228, 229, 233);
   --color-dark-gray:rgb(56, 56, 56);
+  --color-gray:rgb(78, 78, 78);
 }
+
 *{
   box-sizing: border-box;
 }
-li{
-  list-style: none;
-}
+
 ul{
   padding: 0;
-}
-li,button{
-  cursor: pointer;
-}
-h1,h2,h3,p{
   margin: 0;
+}
+button{
+  cursor: pointer;
+  border: none;
+  color: whitesmoke;
+}
+h1,h2,h3,h4,p{
+  margin: 0;
+  color: var(--color-dark-gray);
 }
 h1{
   font-size: 3rem;
 }
+p{
+  font-family: 'Noto Sans KR', sans-serif;
+}
 a{
   text-align: center;
+  text-decoration: none;
+}
+hr{
+  margin: 1em 0;
+  color: var(--color-light-gray);
 }
 article{
   padding:1em 5em;
-  h1{
+  text-align: center;
+  &>h1{
+    display: inline-block;
     margin: 0.5em 0;
-    border-bottom: 3px solid whitesmoke;
-  } 
+    color: var(--color-dark-gray);
+    position: relative;
+  }
+  &>h1::after{
+    content:'';
+    display: inline-block;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:var(--color-underline-light);
+  }
+  h1,h2,h3{
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 300;
+  }
+}
+.scrollUp{
+  position:fixed;
+  bottom:1rem;
+  right:1rem;
+  color: whitesmoke;
+  background-color: var(--color-dark-gray) !important;
+  border-radius: 50%;
+}
+footer{
+  text-align: center;
+  padding: 3rem 0;
+  color:whitesmoke;
+  background-image: linear-gradient(var(--color-main),30%,transparent), url(./images/home/main.jpg) ;
+  background-size: cover;
+}
+
+@media screen and (max-width:650px){
+  .scrollUp{
+    transform: scale(0.8);
+    right:0.5rem;
+  }
 }

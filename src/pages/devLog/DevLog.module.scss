@@ -12,20 +12,41 @@
         background-color: white;
         padding: 2em;
         border-radius: 1rem;
-        h3{
-            margin-bottom: 1em;
+        box-shadow: 2px 2px 2px var(--color-light-gray);
+        h2{
+            margin-bottom: 0.5em;
         }
         img{
-            width: 100%;
-            height: 24rem;
+            width: 90%;
+            aspect-ratio: 3/4;
         }
         a{
             display: inline-block;
-            width: 100%;
+            width: 90%;
             background-color:var(--color-sub);
-            color: whitesmoke;
+            color: white;
             padding: 1em;
             border-radius: 0.5em;
+        }
+    }
+}
+@media screen and (max-width:950px) {
+    .DevLog{
+        padding: 1em 2em;
+    }
+}
+@media screen and (max-width:750px) {
+    .container{
+        flex-direction: column;
+        section{
+            padding: 2em 4em;
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    .container{
+        section{
+            padding: 2em;
         }
     }
 }

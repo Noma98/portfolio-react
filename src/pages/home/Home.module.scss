@@ -3,10 +3,23 @@
     background-image: url(../../images/home/main.jpg);
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     p{
-        padding: 7rem 0 10rem 0;
         font-size: 3rem;
         text-align: center;
         color: whitesmoke;
+    }
+}
+@media screen and (max-width:750px) {
+    .Home{
+        margin-top: 2rem;
+        padding: 1.5em;
+        p{
+            font-size: 1.7rem;
+        }
     }
 }
