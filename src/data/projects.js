@@ -27,7 +27,7 @@ const projects = [
         alert: "heroku 무료 버전은 30분간 사용하지 않았을 경우 잠들게 됩니다. 첫 요청시 6초 정도의 로딩 시간이 필요할 수 있습니다.",
         experience: "lodash로 입력 이벤트 debounce, react-tooltip-lite를 이용한 툴팁 제공, 소셜 로그인의 다양한 구현 방법(Rest API/JavaScript SDK/라이브러리) 경험",
         imgArray: [nomalog1, nomalog2],
-        github: "https: //github.com/Noma98/blog-project-front#nomalog-v165",
+        github: "https://github.com/Noma98/blog-project-front#nomalog-v165",
         front: "React, React Router, PostCSS",
         back: "NodeJS(express), MongoDB(moogoose), AWS S3",
         deploy: "Netlify, Heroku"
