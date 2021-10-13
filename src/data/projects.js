@@ -4,6 +4,8 @@ import cardMaker1 from '../images/projects/cardMaker1.PNG';
 import cardMaker2 from '../images/projects/cardMaker2.PNG';
 import youtube2 from '../images/projects/youtube2.PNG';
 import youtube1 from '../images/projects/youtube1.PNG';
+import youtube3 from '../images/projects/youtube3.PNG';
+
 const projects = [
     {
         name: "Nomalog v1.6.5",
@@ -72,6 +74,7 @@ const projects = [
         callout: "Youtube API의 하루 할당량을 초과하게 되면, 영상이 보이지 않을 수 있습니다.",
         experience: "Postman, Youtube API, axios 라이브러리 사용, 첫 리액트 경험, sessionStorage로 상태 유지, matchMedia 사용",
         imgArray: [youtube1, youtube2],
+        before: youtube3,
         github: "https://github.com/Noma98/Youtube-Clone#youtube-clone",
         front: "React, React Router, PostCSS",
         deploy: "Netlify"

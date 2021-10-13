@@ -4,7 +4,7 @@ import styles from './Project.module.scss';
 import { FaCat } from 'react-icons/fa';
 
 function Project({ data }) {
-    const { name, period, domain, desc, features, callout, experience, github, imgArray, front, back, deploy, alert } = data;
+    const { name, period, domain, desc, features, callout, experience, github, imgArray, front, back, deploy, alert, before } = data;
     return (
         <div className={styles.Project}>
             <h2>{name}</h2>
@@ -19,6 +19,12 @@ function Project({ data }) {
                     {imgArray.map((v, i) => <a key={i} href={domain} target="_blank" rel="noopener noreferrer">
                         <img src={v} alt="project" />
                     </a>)}
+                    {before &&
+                        <>
+                            <small>▽ 개선 전</small>
+                            <img src={before} alt="project" />
+                        </>
+                    }
                 </div>
                 <div className={styles.desc}>
                     {desc.map((v, i) => <p key={i}>{v}</p>)}
